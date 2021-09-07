@@ -1,109 +1,29 @@
-INSERT INTO genres(name) VALUES('rock');
-INSERT INTO genres(name) VALUES('pop');
-INSERT INTO genres(name) VALUES('folk');
-INSERT INTO genres(name) VALUES('jazz');
-INSERT INTO genres(name) VALUES('country');
-INSERT INTO genres(name) VALUES('electronic');
+INSERT INTO genres(name) 
+VALUES ('rock'),('pop'),('folk'),('jazz'),('country'),('electronic');
 	
-INSERT INTO musicians(name) VALUES('Tata Hakuna');
-INSERT INTO musicians(name) VALUES('Vereteno');
-INSERT INTO musicians(name) VALUES('Merenga');
-INSERT INTO musicians(name) VALUES('Bodr Ivesel');
-INSERT INTO musicians(name) VALUES('Urfin biting tale');
-INSERT INTO musicians(name) VALUES('Bibo and Bobo');
-INSERT INTO musicians(name) VALUES('Aiva');
-INSERT INTO musicians(name) VALUES('Cuprum');
-INSERT INTO musicians(name) VALUES('Orange Albatros');
-INSERT INTO musicians(name) VALUES('Mr. Punenta');
+INSERT INTO musicians(name) 
+VALUES('Tata Hakuna'),('Vereteno'),('Merenga'),('Bodr Ivesel'),('Urfin biting tale'),
+	('Bibo and Bobo'),('Aiva'),('Cuprum'),('Orange Albatros'),('Mr. Punenta');
 	
-INSERT INTO genre_musician(genre_id, musician_id) VALUES(19,31);
-INSERT INTO genre_musician(genre_id, musician_id) VALUES(20,32);
-INSERT INTO genre_musician(genre_id, musician_id) VALUES(21,33);
-INSERT INTO genre_musician(genre_id, musician_id) VALUES(22,34);
-INSERT INTO genre_musician(genre_id, musician_id) VALUES(23,35);
-INSERT INTO genre_musician(genre_id, musician_id) VALUES(24,36);
-INSERT INTO genre_musician(genre_id, musician_id) VALUES(19,37);
-INSERT INTO genre_musician(genre_id, musician_id) VALUES(20,38);
-INSERT INTO genre_musician(genre_id, musician_id) VALUES(21,39);
-INSERT INTO genre_musician(genre_id, musician_id) VALUES(22,40);
-INSERT INTO genre_musician(genre_id, musician_id) VALUES(23,31);
-INSERT INTO genre_musician(genre_id, musician_id) VALUES(24,32);
-INSERT INTO genre_musician(genre_id, musician_id) VALUES(19,33);
-INSERT INTO genre_musician(genre_id, musician_id) VALUES(20,31);
-INSERT INTO genre_musician(genre_id, musician_id) VALUES(21,32);
+INSERT INTO genre_musician(genre_id, musician_id) 
+VALUES(19,31),(20,32),(21,33),(22,34),(23,35),(24,36),(19,37),(20,38),(21,39),(22,40),(23,31),(24,32),(19,33),(20,31),(21,32);
 
-INSERT INTO albums(name, year) VALUES('Shadow in night', 2019);
-INSERT INTO albums(name, year) VALUES('Heartbeat', 2020);
-INSERT INTO albums(name, year) VALUES('New old', 2021);
-INSERT INTO albums(name, year) VALUES('Carrramba', 2018);
-INSERT INTO albums(name, year) VALUES('Cats and butterfly', 2017);
-INSERT INTO albums(name, year) VALUES('Ratatata', 2016);
-INSERT INTO albums(name, year) VALUES('Invisible friend', 2020);
-INSERT INTO albums(name, year) VALUES('Wind in a head', 2021);
-INSERT INTO albums(name, year) VALUES('Soultrip', 2018);
-INSERT INTO albums(name, year) VALUES('Lighthouse', 2019);
+INSERT INTO albums(name, year) 
+VALUES('Shadow in night', 2019),('Heartbeat', 2020),('New old', 2021),('Carrramba', 2018),('Cats and butterfly', 2017),
+	('Ratatata', 2016),('Invisible friend', 2020),('Wind in a head', 2021),('Soultrip', 2018),('Lighthouse', 2019);
 
-INSERT INTO musician_album(musician_id, album_id) VALUES(32,11);
-INSERT INTO musician_album(musician_id, album_id) VALUES(33,12);
-INSERT INTO musician_album(musician_id, album_id) VALUES(34,13);
-INSERT INTO musician_album(musician_id, album_id) VALUES(35,14);
-INSERT INTO musician_album(musician_id, album_id) VALUES(36,15);
-INSERT INTO musician_album(musician_id, album_id) VALUES(37,16);
-INSERT INTO musician_album(musician_id, album_id) VALUES(38,17);
-INSERT INTO musician_album(musician_id, album_id) VALUES(39,18);
-INSERT INTO musician_album(musician_id, album_id) VALUES(40,19);
-INSERT INTO musician_album(musician_id, album_id) VALUES(31,20);
-INSERT INTO musician_album(musician_id, album_id) VALUES(35,11);
-INSERT INTO musician_album(musician_id, album_id) VALUES(36,12);
-INSERT INTO musician_album(musician_id, album_id) VALUES(37,13);
-INSERT INTO musician_album(musician_id, album_id) VALUES(38,14);
-INSERT INTO musician_album(musician_id, album_id) VALUES(39,15);
+INSERT INTO musician_album(musician_id, album_id) 
+VALUES(32,11),(33,12),(34,13),(35,14),(36,15),(37,16),(38,17),(39,18),(40,19),(31,20),(35,11),(36,12),(37,13),(38,14),(39,15);
 
+INSERT INTO tracks (name, time, album_id) 
+VALUES('Myrtle tree', 206, 11),('Semiawaken', 308, 12),('Comma', 234, 13),('Silver moon', 206, 14),('Jemyma', 297, 15),('Thorn', 376, 16),('Dialy Hero', 478, 17),('Send in eyes', 390, 18),('Dont slouch!', 403, 19),
+	('I wanna sleep', 267, 20),('But first', 301, 11),('I should finish', 287, 12),('This task', 310, 13),('Hearless cats', 268, 12),('Jumping around', 346, 14),('But I cant', 385, 13),('Join to them', 238, 14),
+	('Soon', 294, 15),('My horse sings igogo', 270, 16),('Last song', 310, 17),('Free', 300 ,11);
 
-INSERT INTO tracks (name, time, album_id) VALUES('Myrtle tree', 206, 11);
-INSERT INTO tracks (name, time, album_id) VALUES('Semiawaken', 308, 12);
-INSERT INTO tracks (name, time, album_id) VALUES('Comma', 234, 13);
-INSERT INTO tracks (name, time, album_id) VALUES('Silver moon', 206, 14);
-INSERT INTO tracks (name, time, album_id) VALUES('Jemyma', 297, 15);
-INSERT INTO tracks (name, time, album_id) VALUES('Thorn', 376, 16);
-INSERT INTO tracks (name, time, album_id) VALUES('Dialy Hero', 478, 17);
-INSERT INTO tracks (name, time, album_id) VALUES('Send in eyes', 390, 18);
-INSERT INTO tracks (name, time, album_id) VALUES('Dont slouch!', 403, 19);
-INSERT INTO tracks (name, time, album_id) VALUES('I wanna sleep', 267, 20);
-INSERT INTO tracks (name, time, album_id) VALUES('But first', 301, 11);
-INSERT INTO tracks (name, time, album_id) VALUES('I should finish', 287, 12);
-INSERT INTO tracks (name, time, album_id) VALUES('This task', 310, 13);
-INSERT INTO tracks (name, time, album_id) VALUES('Hearless cats', 268, 12);
-INSERT INTO tracks (name, time, album_id) VALUES('Jumping around', 346, 14);
-INSERT INTO tracks (name, time, album_id) VALUES('But I cant', 385, 13);
-INSERT INTO tracks (name, time, album_id) VALUES('Join to them', 238, 14);
-INSERT INTO tracks (name, time, album_id) VALUES('Soon', 294, 15);
-INSERT INTO tracks (name, time, album_id) VALUES('My horse sings igogo', 270, 16);
-INSERT INTO tracks (name, time, album_id) VALUES('Last song', 310, 17);
+INSERT INTO mixtapes(name, year) 
+VALUES('Funny mix', 2020),('Old new', 2021),('For driving', 2019),('Run!', 2021),('Almost done', 2018),
+	('Mosquito go away', 2020),('Sorry neighbors', 2018),('It will be loud', 2019),('Without words', 2021);
 
-INSERT INTO mixtapes(name, year) VALUES('Funny mix', 2020);
-INSERT INTO mixtapes(name, year) VALUES('Old new', 2021);
-INSERT INTO mixtapes(name, year) VALUES('For driving', 2019);
-INSERT INTO mixtapes(name, year) VALUES('Run!', 2021);
-INSERT INTO mixtapes(name, year) VALUES('Almost done', 2018);
-INSERT INTO mixtapes(name, year) VALUES('Mosquito go away', 2020);
-INSERT INTO mixtapes(name, year) VALUES('Sorry neighbors', 2018);
-INSERT INTO mixtapes(name, year) VALUES('It will be loud', 2019);
-INSERT INTO mixtapes(name, year) VALUES('Without words', 2021);
-
-INSERT INTO mixtape_track(mixtape_id, track_id) VALUES(12,31);
-INSERT INTO mixtape_track(mixtape_id, track_id) VALUES(13,32);
-INSERT INTO mixtape_track(mixtape_id, track_id) VALUES(14,33);
-INSERT INTO mixtape_track(mixtape_id, track_id) VALUES(15,34);
-INSERT INTO mixtape_track(mixtape_id, track_id) VALUES(16,35);
-INSERT INTO mixtape_track(mixtape_id, track_id) VALUES(17,36);
-INSERT INTO mixtape_track(mixtape_id, track_id) VALUES(18,37);
-INSERT INTO mixtape_track(mixtape_id, track_id) VALUES(10,38);
-INSERT INTO mixtape_track(mixtape_id, track_id) VALUES(10,39);
-INSERT INTO mixtape_track(mixtape_id, track_id) VALUES(11,40);
-INSERT INTO mixtape_track(mixtape_id, track_id) VALUES(15,41);
-INSERT INTO mixtape_track(mixtape_id, track_id) VALUES(16,22);
-INSERT INTO mixtape_track(mixtape_id, track_id) VALUES(17,23);
-INSERT INTO mixtape_track(mixtape_id, track_id) VALUES(18,24);
-INSERT INTO mixtape_track(mixtape_id, track_id) VALUES(14,25);
+INSERT INTO mixtape_track(mixtape_id, track_id) 
+VALUES(12,31),(13,32),(14,33),(15,34),(16,35),(17,36),(18,37),(10,38),(10,39),(11,40),(15,41),(16,22),(17,23),(18,24),(14,25);
 	
